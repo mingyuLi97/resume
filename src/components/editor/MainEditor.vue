@@ -29,6 +29,7 @@ const editor = useEditor({
   min-height: 50px;
   background-color: #ddd;
   border-radius: 10px;
+  flex: 1;
 }
 
 .editor {
