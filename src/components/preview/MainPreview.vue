@@ -1,7 +1,7 @@
 <template>
   <div class="preview">
     <div class="resume" ref="resumeEl" :style="{ height: resumeHeight }">
-      <ResumeInfo />
+      <PersonalInfo />
     </div>
   </div>
 </template>
@@ -9,7 +9,7 @@
 <script setup lang="ts">
 import { onMounted, ref } from "vue";
 
-import ResumeInfo from "./ResumeInfo.vue";
+import PersonalInfo from "./PersonalInfo.vue";
 
 const resumeEl = ref<HTMLDivElement>();
 const resumeHeight = ref<string>("");

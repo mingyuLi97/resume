@@ -21,4 +21,4 @@ interface LinkTag extends BaseTag {
   link: string;
 }
 
-export type ResumeInfoTag = PhoneTag | EmailTag | TextTag | LinkTag;
+export type PersonalInfoTagType = PhoneTag | EmailTag | TextTag | LinkTag;

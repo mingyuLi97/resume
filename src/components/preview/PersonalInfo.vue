@@ -1,5 +1,5 @@
 <!--
- * @Description: 预览 - 人物信息
+ * @Description: 预览 - 个人信息
  * @Author: 李明宇
  * @Date: 2023-07-22 13:58:30
 -->
@@ -11,7 +11,7 @@
       v-for="(tags, index) in tagList"
       :key="index"
     >
-      <ResumeInfoTag v-for="tag in tags" :key="tag.content" :tag="tag" />
+      <PersonalInfoTag v-for="tag in tags" :key="tag.content" :tag="tag" />
     </div>
   </div>
 </template>
@@ -19,10 +19,10 @@
 <script setup lang="ts">
 import { reactive } from "vue";
 
-import { ResumeInfoTag as TagType } from "@/types";
-import ResumeInfoTag from "./ResumeInfoTag.vue";
+import { PersonalInfoTagType } from "@/types";
+import PersonalInfoTag from "./PersonalInfoTag.vue";
 
-const tagList = reactive<TagType[][]>([
+const tagList = reactive<PersonalInfoTagType[][]>([
   [
     {
       type: "text",

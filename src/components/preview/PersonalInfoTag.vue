@@ -37,9 +37,9 @@ import { computed } from "vue";
 import { ElIcon } from "element-plus";
 import { PhoneFilled, Promotion } from "@element-plus/icons-vue";
 
-import { ResumeInfoTag } from "@/types";
+import { PersonalInfoTagType } from "@/types";
 
-const props = defineProps<{ tag: ResumeInfoTag }>();
+const props = defineProps<{ tag: PersonalInfoTagType }>();
 
 const content = computed(() => props.tag.content);
 </script>
