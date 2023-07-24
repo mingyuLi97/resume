@@ -2,6 +2,9 @@
   <div class="preview">
     <div class="resume" ref="resumeEl" :style="{ height: resumeHeight }">
       <PersonalInfo />
+      <ContentWrapper title="教育经历">
+        <span class="text-xs">111</span>
+      </ContentWrapper>
     </div>
   </div>
 </template>
@@ -10,6 +13,7 @@
 import { onMounted, ref } from "vue";
 
 import PersonalInfo from "./PersonalInfo.vue";
+import ContentWrapper from "./ContentWrapper.vue";
 
 const resumeEl = ref<HTMLDivElement>();
 const resumeHeight = ref<string>("");
